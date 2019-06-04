@@ -1,0 +1,1 @@
+python -m tools.finetuning_E3DNet --gpus 0,1,2,3,4 --output ./ckpt/E3DNet_ckpt_ucf101 --pretrained_dir ./ckpt/E3DNet_ckpt_kinetics --model_prefix test --load_epoch 26 --cudnn_tune fastest --batch_per_device 8 --n_frame 16 --lr 0.0001 --wd 0.005 --num_class 101 --num_epoch 15 --datadir /mnt/ccnas2/bdp/hf17/Datasets/UCF101/video_data/UCF-101/ --lr_scheduler_step 15

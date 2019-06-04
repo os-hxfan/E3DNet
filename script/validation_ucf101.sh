@@ -1,0 +1,1 @@
+python -m tools.validation --gpus 0,1,2,3,4 --datadir /mnt/ccnas2/bdp/hf17/Datasets/UCF101/video_data/UCF-101/ --output ckpt/E3DNet_ckpt_ucf101 --eval_epoch 15 --batch_per_device 8 --model_prefix test --num_class 101 --n_frame 16
